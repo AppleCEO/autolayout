@@ -14,13 +14,41 @@
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="3Tf-av-vOR">
+                                <rect key="frame" x="20" y="20" width="80" height="528"/>
+                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="qhM-jx-7OU">
+                                <rect key="frame" x="120" y="20" width="80" height="528"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PmO-H5-Rs1">
+                                <rect key="frame" x="220" y="20" width="80" height="528"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </view>
+                        </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="3Tf-av-vOR" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="45z-Fy-UYp"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="3Tf-av-vOR" secondAttribute="bottom" constant="20" id="AZJ-mI-ksR"/>
+                            <constraint firstItem="PmO-H5-Rs1" firstAttribute="leading" secondItem="qhM-jx-7OU" secondAttribute="trailing" constant="20" id="BeI-pr-2kB"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PmO-H5-Rs1" secondAttribute="trailing" constant="20" id="BnZ-Gp-9b6"/>
+                            <constraint firstItem="qhM-jx-7OU" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="DDk-ZZ-qfb"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qhM-jx-7OU" secondAttribute="bottom" constant="20" id="KaK-KD-hSK"/>
+                            <constraint firstItem="qhM-jx-7OU" firstAttribute="width" secondItem="3Tf-av-vOR" secondAttribute="width" id="f9n-xZ-lPx"/>
+                            <constraint firstItem="3Tf-av-vOR" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="fyQ-2F-Qjh"/>
+                            <constraint firstItem="qhM-jx-7OU" firstAttribute="leading" secondItem="3Tf-av-vOR" secondAttribute="trailing" constant="20" id="jxM-PB-KW3"/>
+                            <constraint firstItem="PmO-H5-Rs1" firstAttribute="width" secondItem="3Tf-av-vOR" secondAttribute="width" id="mY2-xD-iFY"/>
+                            <constraint firstItem="PmO-H5-Rs1" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="s0e-de-Brz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="PmO-H5-Rs1" secondAttribute="bottom" constant="20" id="sqT-Tf-jKU"/>
+                        </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="113.83928571428571"/>
+            <point key="canvasLocation" x="136.875" y="113.02816901408451"/>
         </scene>
     </scenes>
 </document>
