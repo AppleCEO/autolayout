@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina5_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,42 +12,20 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Basic_1_Lecture" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="BDK-f6-Qvq">
-                                <rect key="frame" x="20" y="20" width="200" height="200"/>
-                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="200" id="6Wp-fz-Ctx"/>
-                                    <constraint firstAttribute="width" constant="200" id="jBc-59-6SC"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="FVC-eJ-F4j">
-                                <rect key="frame" x="10" y="20" width="100" height="100"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Q3-jz-ZL2">
+                                <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="147.33333333333334"/>
                                 <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="FZp-oJ-jUx"/>
-                                    <constraint firstAttribute="width" constant="100" id="TSo-Xc-VFh"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="yFY-9H-Cao">
-                                <rect key="frame" x="35" y="45" width="50" height="50"/>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="width" constant="50" id="9C6-kM-bgo"/>
-                                    <constraint firstAttribute="height" constant="50" id="Aly-LO-pp8"/>
-                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="BDK-f6-Qvq" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Jhj-lU-9Fm"/>
-                            <constraint firstItem="yFY-9H-Cao" firstAttribute="centerY" secondItem="FVC-eJ-F4j" secondAttribute="centerY" id="LoC-IA-ISa"/>
-                            <constraint firstItem="FVC-eJ-F4j" firstAttribute="leading" secondItem="BDK-f6-Qvq" secondAttribute="leading" constant="-10" id="glo-Ft-ket"/>
-                            <constraint firstItem="yFY-9H-Cao" firstAttribute="centerX" secondItem="FVC-eJ-F4j" secondAttribute="centerX" id="r4z-wB-WC4"/>
-                            <constraint firstItem="BDK-f6-Qvq" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="vKq-YS-paE"/>
-                            <constraint firstItem="FVC-eJ-F4j" firstAttribute="top" secondItem="BDK-f6-Qvq" secondAttribute="top" id="xkH-FJ-2CX"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Q3-jz-ZL2" secondAttribute="bottom" multiplier="5" id="ORO-5J-6oF"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Q3-jz-ZL2" secondAttribute="trailing" multiplier="10" id="OfW-f5-Zcp"/>
+                            <constraint firstItem="9Q3-jz-ZL2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ahz-vc-GOp"/>
+                            <constraint firstItem="9Q3-jz-ZL2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hFi-kP-yv8"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
