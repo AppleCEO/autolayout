@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina5_5" orientation="landscape" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Rotation_Basic" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="736" height="414"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="A" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="iNS-43-Wne">
+                                <rect key="frame" x="50" y="50" width="20" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="B" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="2p8-hK-76L">
+                                <rect key="frame" x="120" y="50" width="19" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="C" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fKS-Tw-h5m">
+                                <rect key="frame" x="594" y="328" width="21" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="D" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qKU-go-Uqh">
+                                <rect key="frame" x="665" y="328" width="21" height="36"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="fKS-Tw-h5m" firstAttribute="top" secondItem="iNS-43-Wne" secondAttribute="bottom" constant="50" id="1IW-Nv-Yaz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="qKU-go-Uqh" secondAttribute="bottom" constant="50" id="AyU-pJ-z0P"/>
+                            <constraint firstItem="qKU-go-Uqh" firstAttribute="top" secondItem="2p8-hK-76L" secondAttribute="bottom" constant="50" id="H7X-fp-NVR"/>
+                            <constraint firstItem="qKU-go-Uqh" firstAttribute="leading" secondItem="fKS-Tw-h5m" secondAttribute="trailing" constant="50" id="JYp-dP-UwB"/>
+                            <constraint firstItem="2p8-hK-76L" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="Pen-P8-M6o"/>
+                            <constraint firstItem="fKS-Tw-h5m" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="T37-zA-shW"/>
+                            <constraint firstItem="2p8-hK-76L" firstAttribute="leading" secondItem="iNS-43-Wne" secondAttribute="trailing" constant="50" id="TqD-a3-yGj"/>
+                            <constraint firstItem="qKU-go-Uqh" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="aIj-op-X3p"/>
+                            <constraint firstItem="fKS-Tw-h5m" firstAttribute="leading" secondItem="2p8-hK-76L" secondAttribute="trailing" constant="50" id="bbS-xZ-jJz"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="qKU-go-Uqh" secondAttribute="trailing" constant="50" id="ivj-Bu-35z"/>
+                            <constraint firstItem="iNS-43-Wne" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="ovh-v5-1XM"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="fKS-Tw-h5m" secondAttribute="bottom" constant="50" id="qap-cm-Tbb"/>
+                            <constraint firstItem="fKS-Tw-h5m" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="50" id="tB6-ww-6Os"/>
+                            <constraint firstItem="iNS-43-Wne" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="txs-dc-gNg"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <variation key="default">
+                            <mask key="constraints">
+                                <exclude reference="AyU-pJ-z0P"/>
+                                <exclude reference="ivj-Bu-35z"/>
+                                <exclude reference="qap-cm-Tbb"/>
+                                <exclude reference="bbS-xZ-jJz"/>
+                                <exclude reference="tB6-ww-6Os"/>
+                                <exclude reference="aIj-op-X3p"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact">
+                            <mask key="constraints">
+                                <exclude reference="1IW-Nv-Yaz"/>
+                                <exclude reference="T37-zA-shW"/>
+                                <include reference="bbS-xZ-jJz"/>
+                                <include reference="tB6-ww-6Os"/>
+                                <exclude reference="H7X-fp-NVR"/>
+                                <include reference="aIj-op-X3p"/>
+                            </mask>
+                        </variation>
+                        <variation key="heightClass=compact-widthClass=regular">
+                            <mask key="constraints">
+                                <include reference="AyU-pJ-z0P"/>
+                                <include reference="ivj-Bu-35z"/>
+                                <include reference="qap-cm-Tbb"/>
+                                <exclude reference="bbS-xZ-jJz"/>
+                                <exclude reference="tB6-ww-6Os"/>
+                                <exclude reference="aIj-op-X3p"/>
+                            </mask>
+                        </variation>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+        </scene>
+    </scenes>
+</document>
