@@ -15,14 +15,14 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="TitleTitleTitleTitleTitleTitleTitleTitleTitleTitle" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2g-t3-7vu">
-                                <rect key="frame" x="20" y="64" width="293" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="V2g-t3-7vu">
+                                <rect key="frame" x="232" y="64" width="71" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" horizontalCompressionResistancePriority="752" text="Date" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Did-ow-gMY">
-                                <rect key="frame" x="333" y="64" width="61" height="36"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Did-ow-gMY">
+                                <rect key="frame" x="323" y="64" width="71" height="36"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="30"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
@@ -30,11 +30,11 @@
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="V2g-t3-7vu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="Ech-FX-Rky"/>
-                            <constraint firstItem="V2g-t3-7vu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="Pzg-qU-aYW"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Did-ow-gMY" secondAttribute="trailing" constant="20" id="hm0-44-xJq"/>
-                            <constraint firstItem="Did-ow-gMY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="kNm-Ge-9Ku"/>
-                            <constraint firstItem="Did-ow-gMY" firstAttribute="leading" secondItem="V2g-t3-7vu" secondAttribute="trailing" constant="20" id="rE7-Nu-bqy"/>
+                            <constraint firstItem="V2g-t3-7vu" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="7u3-5M-Je7"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="Did-ow-gMY" secondAttribute="trailing" constant="20" id="Cyy-yi-pSl"/>
+                            <constraint firstItem="Did-ow-gMY" firstAttribute="leading" secondItem="V2g-t3-7vu" secondAttribute="trailing" constant="20" id="LEV-8t-MDo"/>
+                            <constraint firstItem="V2g-t3-7vu" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" priority="250" constant="20" id="WpM-e4-qxz"/>
+                            <constraint firstItem="Did-ow-gMY" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="20" id="XXC-9A-WOl"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
