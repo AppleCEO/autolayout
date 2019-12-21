@@ -15,17 +15,49 @@
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="9Q3-jz-ZL2">
-                                <rect key="frame" x="0.0" y="0.0" width="41.333333333333336" height="147.33333333333334"/>
-                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lG0-p1-0lR">
+                                <rect key="frame" x="260.66666666666669" y="134" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="FeX-qv-jVo"/>
+                                    <constraint firstAttribute="height" constant="100" id="prW-ab-nca"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="kGv-Zn-JhB">
+                                <rect key="frame" x="53.666666666666657" y="134" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="HRf-bQ-Rj7"/>
+                                    <constraint firstAttribute="width" constant="100" id="bpe-PB-OVW"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="S1p-Yc-Nop">
+                                <rect key="frame" x="260.66666666666669" y="502" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="6KS-9w-7Li"/>
+                                    <constraint firstAttribute="height" constant="100" id="YJ1-O7-1qT"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="n4J-vS-V86">
+                                <rect key="frame" x="53.666666666666657" y="502" width="100" height="100"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="IKN-ce-Uwd"/>
+                                    <constraint firstAttribute="width" constant="100" id="SYw-KC-Neh"/>
+                                </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="9Q3-jz-ZL2" secondAttribute="bottom" multiplier="5" id="ORO-5J-6oF"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="9Q3-jz-ZL2" secondAttribute="trailing" multiplier="10" id="OfW-f5-Zcp"/>
-                            <constraint firstItem="9Q3-jz-ZL2" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="ahz-vc-GOp"/>
-                            <constraint firstItem="9Q3-jz-ZL2" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hFi-kP-yv8"/>
+                            <constraint firstItem="S1p-Yc-Nop" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="3jd-VC-qQo"/>
+                            <constraint firstItem="n4J-vS-V86" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.5" id="8RH-bv-bTM"/>
+                            <constraint firstItem="lG0-p1-0lR" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="L0j-wm-JfJ"/>
+                            <constraint firstItem="kGv-Zn-JhB" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="Lq9-KM-idt"/>
+                            <constraint firstItem="kGv-Zn-JhB" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="PME-cg-brd"/>
+                            <constraint firstItem="S1p-Yc-Nop" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="S4i-Hn-O5c"/>
+                            <constraint firstItem="lG0-p1-0lR" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.5" id="uDP-gB-eF7"/>
+                            <constraint firstItem="n4J-vS-V86" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="wsl-Aa-AYq"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
