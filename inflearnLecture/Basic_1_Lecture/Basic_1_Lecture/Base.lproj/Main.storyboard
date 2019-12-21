@@ -16,18 +16,18 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uJH-bC-jZd">
-                                <rect key="frame" x="50" y="586" width="314" height="100"/>
+                                <rect key="frame" x="107" y="268" width="200" height="200"/>
                                 <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="NAL-0A-JQN"/>
+                                    <constraint firstAttribute="height" constant="200" id="FkP-vt-R6m"/>
+                                    <constraint firstAttribute="width" constant="200" id="ZrM-nU-NVu"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="uJH-bC-jZd" secondAttribute="trailing" constant="50" id="8Z7-Zd-w3m"/>
-                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="uJH-bC-jZd" secondAttribute="bottom" constant="50" id="bFF-wv-AEs"/>
-                            <constraint firstItem="uJH-bC-jZd" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="50" id="nCp-6q-Ac1"/>
+                            <constraint firstItem="uJH-bC-jZd" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="ybp-gG-hzO"/>
+                            <constraint firstItem="uJH-bC-jZd" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="zfs-Cv-v8J"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
