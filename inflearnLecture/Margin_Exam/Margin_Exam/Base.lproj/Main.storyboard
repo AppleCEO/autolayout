@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Margin_Exam" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="JHz-PN-8XW">
+                                <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="EWb-Xo-Ibd">
+                                        <rect key="frame" x="8" y="8" width="398" height="802"/>
+                                        <subviews>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aMl-vQ-UyY">
+                                                <rect key="frame" x="50" y="8" width="340" height="256.5"/>
+                                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Gwz-ab-hQB">
+                                                <rect key="frame" x="50" y="272.5" width="340" height="257"/>
+                                                <color key="backgroundColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="eud-lL-C72">
+                                                <rect key="frame" x="50" y="537.5" width="340" height="256.5"/>
+                                                <color key="backgroundColor" systemColor="systemPurpleColor" red="0.68627450980000004" green="0.32156862749999998" blue="0.87058823529999996" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                            </view>
+                                        </subviews>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstItem="Gwz-ab-hQB" firstAttribute="leading" secondItem="EWb-Xo-Ibd" secondAttribute="leadingMargin" id="0SP-lB-les"/>
+                                            <constraint firstAttribute="bottomMargin" secondItem="eud-lL-C72" secondAttribute="bottom" id="3lt-2Y-Z55"/>
+                                            <constraint firstItem="Gwz-ab-hQB" firstAttribute="top" secondItem="aMl-vQ-UyY" secondAttribute="bottom" constant="8" symbolic="YES" id="BUH-DD-b1I"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="Gwz-ab-hQB" secondAttribute="trailing" id="PNO-wV-i8l"/>
+                                            <constraint firstItem="Gwz-ab-hQB" firstAttribute="height" secondItem="aMl-vQ-UyY" secondAttribute="height" id="RGI-gI-5kN"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="eud-lL-C72" secondAttribute="trailing" id="cB7-HJ-Gpc"/>
+                                            <constraint firstItem="eud-lL-C72" firstAttribute="leading" secondItem="EWb-Xo-Ibd" secondAttribute="leadingMargin" id="e24-HU-Wmq"/>
+                                            <constraint firstItem="aMl-vQ-UyY" firstAttribute="top" secondItem="EWb-Xo-Ibd" secondAttribute="topMargin" id="iHl-f4-uGX"/>
+                                            <constraint firstItem="aMl-vQ-UyY" firstAttribute="leading" secondItem="EWb-Xo-Ibd" secondAttribute="leadingMargin" id="sn0-PK-mO5"/>
+                                            <constraint firstItem="eud-lL-C72" firstAttribute="top" secondItem="Gwz-ab-hQB" secondAttribute="bottom" constant="8" symbolic="YES" id="v8c-9P-cXs"/>
+                                            <constraint firstAttribute="trailingMargin" secondItem="aMl-vQ-UyY" secondAttribute="trailing" id="ve2-Em-UBY"/>
+                                            <constraint firstItem="eud-lL-C72" firstAttribute="height" secondItem="aMl-vQ-UyY" secondAttribute="height" id="yIc-3w-eNc"/>
+                                        </constraints>
+                                        <edgeInsets key="layoutMargins" top="8" left="50" bottom="8" right="8"/>
+                                    </view>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottomMargin" secondItem="EWb-Xo-Ibd" secondAttribute="bottom" id="1cT-Tf-9Kh"/>
+                                    <constraint firstItem="EWb-Xo-Ibd" firstAttribute="top" secondItem="JHz-PN-8XW" secondAttribute="topMargin" id="8RA-G9-vjh"/>
+                                    <constraint firstAttribute="trailingMargin" secondItem="EWb-Xo-Ibd" secondAttribute="trailing" id="ZOd-Rw-hfY"/>
+                                    <constraint firstItem="EWb-Xo-Ibd" firstAttribute="leading" secondItem="JHz-PN-8XW" secondAttribute="leadingMargin" id="kOd-kl-5mF"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="bottom" secondItem="JHz-PN-8XW" secondAttribute="bottom" id="0Qt-DL-SAT"/>
+                            <constraint firstItem="JHz-PN-8XW" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="CkF-x3-fCp"/>
+                            <constraint firstItem="JHz-PN-8XW" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="Tak-i1-TC2"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="JHz-PN-8XW" secondAttribute="trailing" id="oGV-E7-U6X"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="139" y="127"/>
+        </scene>
+    </scenes>
+</document>
