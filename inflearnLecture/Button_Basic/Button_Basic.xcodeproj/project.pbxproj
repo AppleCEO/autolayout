@@ -13,6 +13,7 @@
 		3311376223B111F20032FCD8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3311376023B111F20032FCD8 /* Main.storyboard */; };
 		3311376423B111F40032FCD8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3311376323B111F40032FCD8 /* Assets.xcassets */; };
 		3311376723B111F40032FCD8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3311376523B111F40032FCD8 /* LaunchScreen.storyboard */; };
+		3311377223B114750032FCD8 /* home300.png in Resources */ = {isa = PBXBuildFile; fileRef = 3311376F23B114750032FCD8 /* home300.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		3311376323B111F40032FCD8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		3311376623B111F40032FCD8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		3311376823B111F40032FCD8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3311376F23B114750032FCD8 /* home300.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = home300.png; path = "../../Lecture Image Resource/home300.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -63,6 +65,7 @@
 				3311376323B111F40032FCD8 /* Assets.xcassets */,
 				3311376523B111F40032FCD8 /* LaunchScreen.storyboard */,
 				3311376823B111F40032FCD8 /* Info.plist */,
+				3311376F23B114750032FCD8 /* home300.png */,
 			);
 			path = Button_Basic;
 			sourceTree = "<group>";
@@ -128,6 +131,7 @@
 				3311376723B111F40032FCD8 /* LaunchScreen.storyboard in Resources */,
 				3311376423B111F40032FCD8 /* Assets.xcassets in Resources */,
 				3311376223B111F20032FCD8 /* Main.storyboard in Resources */,
+				3311377223B114750032FCD8 /* home300.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
