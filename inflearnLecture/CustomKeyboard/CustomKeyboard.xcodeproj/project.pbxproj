@@ -13,6 +13,8 @@
 		33EA820623B1D53B00191632 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33EA820423B1D53B00191632 /* Main.storyboard */; };
 		33EA820823B1D53D00191632 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 33EA820723B1D53D00191632 /* Assets.xcassets */; };
 		33EA820B23B1D53D00191632 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 33EA820923B1D53D00191632 /* LaunchScreen.storyboard */; };
+		33EA821323B1D64000191632 /* CustomKeyboard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 33EA821223B1D64000191632 /* CustomKeyboard.swift */; };
+		33EA821523B1D6A600191632 /* CustomKeyboard.xib in Resources */ = {isa = PBXBuildFile; fileRef = 33EA821423B1D6A600191632 /* CustomKeyboard.xib */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +26,8 @@
 		33EA820723B1D53D00191632 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		33EA820A23B1D53D00191632 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		33EA820C23B1D53D00191632 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		33EA821223B1D64000191632 /* CustomKeyboard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomKeyboard.swift; sourceTree = "<group>"; };
+		33EA821423B1D6A600191632 /* CustomKeyboard.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CustomKeyboard.xib; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +64,8 @@
 				33EA820023B1D53B00191632 /* SceneDelegate.swift */,
 				33EA820223B1D53B00191632 /* ViewController.swift */,
 				33EA820423B1D53B00191632 /* Main.storyboard */,
+				33EA821223B1D64000191632 /* CustomKeyboard.swift */,
+				33EA821423B1D6A600191632 /* CustomKeyboard.xib */,
 				33EA820723B1D53D00191632 /* Assets.xcassets */,
 				33EA820923B1D53D00191632 /* LaunchScreen.storyboard */,
 				33EA820C23B1D53D00191632 /* Info.plist */,
@@ -128,6 +134,7 @@
 				33EA820B23B1D53D00191632 /* LaunchScreen.storyboard in Resources */,
 				33EA820823B1D53D00191632 /* Assets.xcassets in Resources */,
 				33EA820623B1D53B00191632 /* Main.storyboard in Resources */,
+				33EA821523B1D6A600191632 /* CustomKeyboard.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +148,7 @@
 				33EA820323B1D53B00191632 /* ViewController.swift in Sources */,
 				33EA81FF23B1D53B00191632 /* AppDelegate.swift in Sources */,
 				33EA820123B1D53B00191632 /* SceneDelegate.swift in Sources */,
+				33EA821323B1D64000191632 /* CustomKeyboard.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
