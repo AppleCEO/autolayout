@@ -25,6 +25,9 @@
                                     <constraint firstAttribute="width" constant="60" id="fTZ-K4-jpM"/>
                                 </constraints>
                                 <state key="normal" image="add_icon_green.png"/>
+                                <connections>
+                                    <segue destination="wwv-Fi-3h5" kind="show" identifier="showPopup" animates="NO" id="T2c-wM-CbU"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
@@ -43,24 +46,35 @@
             </objects>
             <point key="canvasLocation" x="139" y="127"/>
         </scene>
-        <!--View Controller-->
+        <!--Floating Button List View Controller-->
         <scene sceneID="p9l-AE-GFE">
             <objects>
-                <viewController id="wwv-Fi-3h5" sceneMemberID="viewController">
+                <viewController id="wwv-Fi-3h5" customClass="FloatingButtonListViewController" customModule="FloatingButton" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="Ucg-XJ-xUL">
-                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
+                            <visualEffectView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="aRY-dD-Ghy">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                <view key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="oaX-sg-b6O">
+                                    <rect key="frame" x="0.0" y="0.0" width="414" height="842"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                </view>
+                                <blurEffect style="regular"/>
+                            </visualEffectView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wb0-u3-v30">
-                                <rect key="frame" x="319" y="527" width="50" height="50"/>
+                                <rect key="frame" x="319" y="473" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="KZd-uj-VeQ"/>
                                     <constraint firstAttribute="width" constant="50" id="eHk-nH-ydY"/>
                                 </constraints>
                                 <state key="normal" image="food1.png"/>
+                                <connections>
+                                    <action selector="food3Action:" destination="wwv-Fi-3h5" eventType="touchUpInside" id="YZX-qN-P2s"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="0Y6-zH-58P">
-                                <rect key="frame" x="319" y="607" width="50" height="50"/>
+                                <rect key="frame" x="319" y="553" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="1sP-TM-UYk"/>
                                     <constraint firstAttribute="width" constant="50" id="91H-wM-Fsv"/>
@@ -68,7 +82,7 @@
                                 <state key="normal" image="food2.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="niC-Xc-d9R">
-                                <rect key="frame" x="319" y="687" width="50" height="50"/>
+                                <rect key="frame" x="319" y="633" width="50" height="50"/>
                                 <constraints>
                                     <constraint firstAttribute="height" constant="50" id="tl5-GB-jzb"/>
                                     <constraint firstAttribute="width" constant="50" id="vk9-xd-bfm"/>
@@ -76,31 +90,43 @@
                                 <state key="normal" image="food3.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f6S-WX-w5d">
-                                <rect key="frame" x="314" y="762" width="60" height="60"/>
+                                <rect key="frame" x="314" y="708" width="60" height="60"/>
                                 <constraints>
                                     <constraint firstAttribute="width" constant="60" id="C1E-kF-8FQ"/>
                                     <constraint firstAttribute="height" constant="60" id="W3c-zx-WPb"/>
                                 </constraints>
                                 <state key="normal" image="add_icon_green.png"/>
+                                <connections>
+                                    <action selector="dismissFloating:" destination="wwv-Fi-3h5" eventType="touchUpInside" id="rnz-mc-fBj"/>
+                                </connections>
                             </button>
                         </subviews>
-                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="aRY-dD-Ghy" firstAttribute="leading" secondItem="Ucg-XJ-xUL" secondAttribute="leading" id="4Qg-83-dv6"/>
                             <constraint firstItem="f6S-WX-w5d" firstAttribute="centerX" secondItem="niC-Xc-d9R" secondAttribute="centerX" id="8wR-RU-hoY"/>
                             <constraint firstItem="f6S-WX-w5d" firstAttribute="centerX" secondItem="0Y6-zH-58P" secondAttribute="centerX" id="GyA-2B-YPc"/>
                             <constraint firstItem="f6S-WX-w5d" firstAttribute="centerY" secondItem="Wb0-u3-v30" secondAttribute="centerY" constant="240" id="I6C-TU-ecT"/>
                             <constraint firstItem="f6S-WX-w5d" firstAttribute="centerY" secondItem="niC-Xc-d9R" secondAttribute="centerY" constant="80" id="d7C-RJ-ABr"/>
+                            <constraint firstAttribute="trailing" secondItem="aRY-dD-Ghy" secondAttribute="trailing" id="dbq-eP-LRM"/>
                             <constraint firstItem="erN-N0-dzO" firstAttribute="bottom" secondItem="f6S-WX-w5d" secondAttribute="bottom" constant="40" id="elX-aW-ryw"/>
                             <constraint firstItem="erN-N0-dzO" firstAttribute="trailing" secondItem="f6S-WX-w5d" secondAttribute="trailing" constant="40" id="gAK-FY-cgE"/>
                             <constraint firstItem="f6S-WX-w5d" firstAttribute="centerY" secondItem="0Y6-zH-58P" secondAttribute="centerY" constant="160" id="rTW-7K-XH5"/>
+                            <constraint firstAttribute="bottom" secondItem="aRY-dD-Ghy" secondAttribute="bottom" id="tnI-cb-xcP"/>
                             <constraint firstItem="f6S-WX-w5d" firstAttribute="centerX" secondItem="Wb0-u3-v30" secondAttribute="centerX" id="ugZ-TP-3Bh"/>
+                            <constraint firstItem="aRY-dD-Ghy" firstAttribute="top" secondItem="Ucg-XJ-xUL" secondAttribute="top" id="v2J-0v-s4X"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="erN-N0-dzO"/>
                     </view>
+                    <navigationItem key="navigationItem" id="SqK-Lr-PmK"/>
+                    <connections>
+                        <outlet property="button1CenterY" destination="d7C-RJ-ABr" id="Zuo-zq-h7u"/>
+                        <outlet property="button2CenterY" destination="rTW-7K-XH5" id="1pb-dj-aRQ"/>
+                        <outlet property="button3CenterY" destination="I6C-TU-ecT" id="CkH-C8-DzZ"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="9Cu-rW-ICE" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="840.57971014492762" y="126.5625"/>
+            <point key="canvasLocation" x="960.86956521739137" y="126.5625"/>
         </scene>
     </scenes>
     <resources>
