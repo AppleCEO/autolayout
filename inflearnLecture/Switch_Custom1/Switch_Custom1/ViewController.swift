@@ -16,10 +16,26 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
+       
+        
+        SwitchBackground.layer.cornerRadius = 25
+       
+        switchButton.layer.cornerRadius = 25
     }
 
     @IBAction func selectedButton(_ sender: Any) {
+        buttonCenterX.constant = -buttonCenterX.constant
+       
+       
+        if SwitchBackground.backgroundColor == UIColor.yellow {
+            SwitchBackground.backgroundColor = UIColor.systemFill
+        } else {
+            SwitchBackground.backgroundColor = UIColor.yellow
+        }
         
+        UIView.animate(withDuration: 0.3) {
+            self.view.layoutIfNeeded()
+        }
     }
     
 }
