@@ -74,15 +74,40 @@
                                     <constraint firstAttribute="bottom" secondItem="0qL-eF-jVX" secondAttribute="bottom" id="sw4-uf-HkX"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WT4-Wi-MTW">
+                                <rect key="frame" x="86" y="473" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="style2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4pK-SM-sVh"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="zR4-Pc-VnP">
+                                <rect key="frame" x="20" y="473" width="46" height="30"/>
+                                <state key="normal" title="Button"/>
+                                <connections>
+                                    <action selector="style1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="RjD-wy-IUs"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
+                            <constraint firstItem="zR4-Pc-VnP" firstAttribute="top" secondItem="oJd-XD-oSw" secondAttribute="bottom" constant="20" id="2T8-Jz-7aN"/>
+                            <constraint firstItem="WT4-Wi-MTW" firstAttribute="top" secondItem="oJd-XD-oSw" secondAttribute="bottom" constant="20" id="HPV-dX-8Vl"/>
                             <constraint firstItem="oJd-XD-oSw" firstAttribute="centerY" secondItem="6Tk-OE-BBY" secondAttribute="centerY" constant="-100" id="UTc-Lm-Zxq"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oJd-XD-oSw" secondAttribute="trailing" constant="20" id="Xhy-Xu-88I"/>
                             <constraint firstItem="oJd-XD-oSw" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="djk-X8-U8B"/>
+                            <constraint firstItem="zR4-Pc-VnP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="sX8-o5-B0e"/>
+                            <constraint firstItem="WT4-Wi-MTW" firstAttribute="leading" secondItem="zR4-Pc-VnP" secondAttribute="trailing" constant="20" id="wjm-ad-END"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <connections>
+                        <outlet property="graph1Height" destination="f2A-IP-27P" id="SBP-AT-SvK"/>
+                        <outlet property="graph2Height" destination="Jj3-CL-N1n" id="exf-1y-SnC"/>
+                        <outlet property="graph3Height" destination="LA7-3e-Y1l" id="cdj-YB-hCO"/>
+                        <outlet property="graph4Height" destination="hBL-5T-WMV" id="Vt6-mC-Oh0"/>
+                        <outlet property="graph5Height" destination="rPT-Oy-ahv" id="bg1-Rx-HCi"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
