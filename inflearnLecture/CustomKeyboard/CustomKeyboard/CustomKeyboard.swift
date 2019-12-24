@@ -8,7 +8,18 @@
 
 import UIKit
 
-class CustomKeyboard: UIView {
+protocol CustomKeyboardDelegate {
+    func keyboardTapped(name: String)
+}
 
+class CustomKeyboard: UIView {
+    var delegate: CustomKeyboardDelegate?
+    
+    @IBAction func buttonTapped(_ sender: UIButton) {
+        delegate?.keyboardTapped(name: sender.titleLabel!.text!)
+        
+    }
+    
+    
 
 }
