@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15702" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
-    <device id="retina4_0" orientation="portrait" appearance="light"/>
+    <device id="retina6_5" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15704"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
@@ -12,18 +12,24 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Cert_Exam" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="PQm-Bp-QSP">
-                                <rect key="frame" x="20" y="84.5" width="280" height="399"/>
+                                <rect key="frame" x="20" y="181.33333333333331" width="374" height="533.33333333333348"/>
                                 <subviews>
                                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="Cert_BG.PNG" translatesAutoresizingMaskIntoConstraints="NO" id="MAw-95-GNz">
-                                        <rect key="frame" x="20" y="20" width="240" height="359"/>
+                                        <rect key="frame" x="20" y="19.999999999999972" width="334" height="493.33333333333326"/>
                                     </imageView>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공인인증서" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="A8p-rt-E9v">
-                                        <rect key="frame" x="97" y="20" width="86.5" height="131.5"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="공인인증서" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumScaleFactor="0.5" translatesAutoresizingMaskIntoConstraints="NO" id="A8p-rt-E9v">
+                                        <rect key="frame" x="128.66666666666666" y="20" width="116.66666666666666" height="185.33333333333334"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="홍길동" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="20" translatesAutoresizingMaskIntoConstraints="NO" id="vfG-YC-5Uk">
+                                        <rect key="frame" x="140.33333333333334" y="20" width="93.333333333333343" height="344.33333333333331"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="40"/>
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
@@ -32,19 +38,52 @@
                                 <constraints>
                                     <constraint firstItem="A8p-rt-E9v" firstAttribute="top" secondItem="MAw-95-GNz" secondAttribute="top" id="0GF-oD-nIF"/>
                                     <constraint firstItem="A8p-rt-E9v" firstAttribute="centerX" secondItem="MAw-95-GNz" secondAttribute="centerX" id="5U4-r6-KQz"/>
+                                    <constraint firstItem="vfG-YC-5Uk" firstAttribute="bottom" secondItem="MAw-95-GNz" secondAttribute="bottom" multiplier="0.71" id="88B-YM-9Hd"/>
                                     <constraint firstAttribute="trailing" secondItem="MAw-95-GNz" secondAttribute="trailing" constant="20" symbolic="YES" id="9gw-30-oaq"/>
                                     <constraint firstAttribute="width" secondItem="PQm-Bp-QSP" secondAttribute="height" multiplier="1009:1438" id="Ijm-pt-cLx"/>
+                                    <constraint firstItem="vfG-YC-5Uk" firstAttribute="width" secondItem="MAw-95-GNz" secondAttribute="width" multiplier="0.28" id="Ix9-fP-ATr"/>
                                     <constraint firstItem="MAw-95-GNz" firstAttribute="leading" secondItem="PQm-Bp-QSP" secondAttribute="leading" constant="20" symbolic="YES" id="JH2-5b-BlI"/>
                                     <constraint firstItem="A8p-rt-E9v" firstAttribute="bottom" secondItem="MAw-95-GNz" secondAttribute="bottom" multiplier="0.4" id="VoN-qH-J87"/>
+                                    <constraint firstItem="vfG-YC-5Uk" firstAttribute="centerX" secondItem="MAw-95-GNz" secondAttribute="centerX" id="ecO-uh-YYV"/>
+                                    <constraint firstItem="vfG-YC-5Uk" firstAttribute="top" secondItem="MAw-95-GNz" secondAttribute="top" id="exg-AJ-AJE"/>
                                     <constraint firstAttribute="bottom" secondItem="MAw-95-GNz" secondAttribute="bottom" constant="20" symbolic="YES" id="gYI-HI-cdr"/>
                                     <constraint firstItem="MAw-95-GNz" firstAttribute="top" secondItem="PQm-Bp-QSP" secondAttribute="top" constant="20" symbolic="YES" id="qYH-JY-yRb"/>
+                                    <constraint firstItem="A8p-rt-E9v" firstAttribute="width" secondItem="MAw-95-GNz" secondAttribute="width" multiplier="0.35" id="yWV-fb-oPe"/>
                                 </constraints>
                             </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="발급자 : 금융결제원" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="taG-0V-tAI">
+                                <rect key="frame" x="141.33333333333331" y="181.33333333333331" width="131.33333333333331" height="533.33333333333348"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종 류 : 은행" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="k25-HD-Uxt">
+                                <rect key="frame" x="141.33333333333331" y="181.33333333333331" width="131.33333333333331" height="604.66666666666674"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="만료일 : 2018-03-06" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="W59-tF-noS">
+                                <rect key="frame" x="141.33333333333334" y="181.33333333333337" width="153.00000000000003" height="676"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
                             <constraint firstItem="PQm-Bp-QSP" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="Aen-AL-Oy2"/>
+                            <constraint firstItem="W59-tF-noS" firstAttribute="bottom" secondItem="PQm-Bp-QSP" secondAttribute="bottom" multiplier="1.2" id="Ndh-Pl-FXi"/>
+                            <constraint firstItem="k25-HD-Uxt" firstAttribute="top" secondItem="PQm-Bp-QSP" secondAttribute="top" id="TVW-ww-J2t"/>
+                            <constraint firstItem="k25-HD-Uxt" firstAttribute="bottom" secondItem="PQm-Bp-QSP" secondAttribute="bottom" multiplier="1.1" id="cKL-Ow-rkQ"/>
+                            <constraint firstItem="k25-HD-Uxt" firstAttribute="centerX" secondItem="PQm-Bp-QSP" secondAttribute="centerX" id="cye-Dl-s1N"/>
+                            <constraint firstItem="k25-HD-Uxt" firstAttribute="leading" secondItem="taG-0V-tAI" secondAttribute="leading" id="jTs-ni-hbK"/>
+                            <constraint firstItem="W59-tF-noS" firstAttribute="top" secondItem="PQm-Bp-QSP" secondAttribute="top" id="kZM-7o-KAb"/>
+                            <constraint firstItem="taG-0V-tAI" firstAttribute="top" secondItem="PQm-Bp-QSP" secondAttribute="top" id="nzo-HU-BwU"/>
+                            <constraint firstItem="taG-0V-tAI" firstAttribute="centerX" secondItem="PQm-Bp-QSP" secondAttribute="centerX" id="oWq-lk-Jmr"/>
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="PQm-Bp-QSP" secondAttribute="trailing" constant="20" id="pvY-Lf-jsX"/>
+                            <constraint firstItem="taG-0V-tAI" firstAttribute="bottom" secondItem="PQm-Bp-QSP" secondAttribute="bottom" id="u5M-gw-kAS"/>
+                            <constraint firstItem="k25-HD-Uxt" firstAttribute="leading" secondItem="W59-tF-noS" secondAttribute="leading" id="uff-Xx-kpm"/>
                             <constraint firstItem="PQm-Bp-QSP" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" constant="20" id="x7L-hV-AUs"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
@@ -52,7 +91,7 @@
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="137.68115942028987" y="126.5625"/>
+            <point key="canvasLocation" x="136.80000000000001" y="126.38680659670166"/>
         </scene>
     </scenes>
     <resources>
