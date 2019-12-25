@@ -20,7 +20,7 @@
                         <rect key="frame" x="132" y="10" width="178" height="127"/>
                         <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
                     </imageView>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="a" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZgF-ZE-Dfs">
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="ZgF-ZE-Dfs">
                         <rect key="frame" x="142" y="10" width="138" height="127"/>
                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
@@ -47,6 +47,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="myTextView" destination="ZgF-ZE-Dfs" id="Cdb-Ax-Soc"/>
+            </connections>
             <point key="canvasLocation" x="137.68115942028987" y="107.47767857142857"/>
         </tableViewCell>
     </objects>

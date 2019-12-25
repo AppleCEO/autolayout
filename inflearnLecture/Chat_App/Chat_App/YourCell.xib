@@ -17,17 +17,17 @@
                 <autoresizingMask key="autoresizingMask"/>
                 <subviews>
                     <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="yourBubble.png" translatesAutoresizingMaskIntoConstraints="NO" id="qny-3A-hxZ">
-                        <rect key="frame" x="10" y="10" width="277" height="149"/>
+                        <rect key="frame" x="10" y="10" width="133" height="149"/>
                         <rect key="contentStretch" x="0.5" y="0.5" width="0.0" height="0.0"/>
                     </imageView>
-                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" text="abababababababababababababababababababababababababababababab" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c47-vp-vKb">
-                        <rect key="frame" x="50" y="10" width="227" height="149"/>
+                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" scrollEnabled="NO" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="c47-vp-vKb">
+                        <rect key="frame" x="50" y="10" width="83" height="149"/>
                         <color key="textColor" systemColor="labelColor" cocoaTouchSystemColor="darkTextColor"/>
                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
                         <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                     </textView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2020.1.1." textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8JH-5m-dvn">
-                        <rect key="frame" x="292" y="147" width="42.5" height="12"/>
+                        <rect key="frame" x="148" y="147" width="42.5" height="12"/>
                         <fontDescription key="fontDescription" type="system" pointSize="10"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -47,6 +47,9 @@
                 </constraints>
             </tableViewCellContentView>
             <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="yourTextView" destination="c47-vp-vKb" id="D6K-zY-ebj"/>
+            </connections>
             <point key="canvasLocation" x="180.43478260869566" y="183.81696428571428"/>
         </tableViewCell>
     </objects>

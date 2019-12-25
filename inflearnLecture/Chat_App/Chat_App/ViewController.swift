@@ -13,6 +13,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var inputTextView: UITextView!
     @IBOutlet weak var inputViewBottomMargin: NSLayoutConstraint!
     
+    var chatDatas = [String]()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,6 +24,10 @@ class ViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillShow), name: UIResponder.keyboardWillShowNotification, object: nil)
         
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
+        
+        chatTableView.delegate = self
+        chatTableView.dataSource = self
+        chatTableView.separatorStyle = .none
     }
 
     @objc func keyboardWillShow(noti: Notification) {
@@ -47,13 +53,32 @@ class ViewController: UIViewController {
         UIView.animate(withDuration: animationDuration) {
             self.view.layoutIfNeeded()
         }
-        
-        
     }
     
     @IBAction func sendString(_ sender: Any) {
-        
+        chatDatas.append(inputTextView.text!)
+        inputTextView.text = ""
+        let lastIndexPath = IndexPath(row: chatDatas.count-1, section: 0)
+        chatTableView.insertRows(at: [lastIndexPath], with: .automatic)
+        chatTableView.scrollToRow(at: lastIndexPath, at: .bottom, animated: true)
     }
     
 }
 
+extension ViewController: UITableViewDelegate, UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        chatDatas.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        if indexPath.row % 2 == 0 {
+            let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyCell
+            myCell.myTextView.text = chatDatas[indexPath.row]
+            return myCell
+        }
+        
+        let yourCell = tableView.dequeueReusableCell(withIdentifier: "yourCell", for: indexPath) as! YourCell
+        yourCell.yourTextView.text = chatDatas[indexPath.row]
+        return yourCell
+    }
+}
