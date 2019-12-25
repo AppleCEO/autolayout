@@ -13,31 +13,42 @@ class ViewController: UIViewController {
     @IBOutlet weak var passwordTextField: UITextField!
     @IBOutlet weak var emailError: UILabel!
     @IBOutlet weak var passwordError: UILabel!
+    var emailErrorHeight: NSLayoutConstraint!
+    var passwordErrorHeight: NSLayoutConstraint!
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
         emailTextField.addTarget(self, action: #selector(textFieldEdited), for: .editingChanged)
         passwordTextField.addTarget(self, action: #selector(textFieldEdited), for: .editingChanged)
+        
+        emailErrorHeight = emailError.heightAnchor.constraint(equalToConstant: 0)
+        passwordErrorHeight = passwordError.heightAnchor.constraint(equalToConstant: 0)
     }
 
     @objc func textFieldEdited(textField: UITextField) {
+        defer {
+            UIView.animate(withDuration: 0.1) {
+                self.view.layoutIfNeeded()
+            }
+        }
+        
         if textField == emailTextField {
             if isValidEmail(email: textField.text) {
-                emailError.isHidden = true
+                emailErrorHeight.isActive = true
                 return
             }
             
-            emailError.isHidden = false
+            emailErrorHeight.isActive = false
         }
         
         if textField == passwordTextField {
             if textField.text?.count ?? 0 >= 8 {
-                passwordError.isHidden = true
+                passwordErrorHeight.isActive = true
                 return
             }
             
-            passwordError.isHidden = false
+            passwordErrorHeight.isActive = false
         }
     }
 
