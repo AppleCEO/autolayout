@@ -10,6 +10,13 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBAction func showPopup(_ sender: Any) {
+        let storyBoard = UIStoryboard.init(name: "PopupViewController", bundle: nil)
+        let popupViewController = storyBoard.instantiateViewController(withIdentifier: "popupID")
+        
+        popupViewController.modalPresentationStyle = .overCurrentContext
+        self.present(popupViewController, animated: false, completion: nil)
+    }
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.

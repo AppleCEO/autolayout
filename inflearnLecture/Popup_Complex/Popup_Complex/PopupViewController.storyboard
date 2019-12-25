@@ -36,7 +36,10 @@
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eHU-eV-dYg">
                                         <rect key="frame" x="121.5" y="305.5" width="98.5" height="30"/>
-                                        <state key="normal" title="Button"/>
+                                        <state key="normal" title="Close"/>
+                                        <connections>
+                                            <action selector="closePopup:" destination="QsF-L2-0bu" eventType="touchUpInside" id="upA-2N-UlS"/>
+                                        </connections>
                                     </button>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="LongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLongLong" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ZzK-gd-hJU">
                                         <rect key="frame" x="20" y="150" width="200" height="81.5"/>
@@ -87,7 +90,7 @@
                                 </constraints>
                             </view>
                         </subviews>
-                        <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
                             <constraint firstItem="hYP-kC-O41" firstAttribute="centerX" secondItem="8qR-OA-lLH" secondAttribute="centerX" id="LcX-g0-r4J"/>
                             <constraint firstItem="hYP-kC-O41" firstAttribute="centerY" secondItem="8qR-OA-lLH" secondAttribute="centerY" multiplier="0.9" id="t8o-6w-iCF"/>
