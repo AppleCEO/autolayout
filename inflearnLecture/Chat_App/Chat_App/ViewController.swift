@@ -12,6 +12,7 @@ class ViewController: UIViewController {
     @IBOutlet weak var chatTableView: UITableView!
     @IBOutlet weak var inputTextView: UITextView!
     @IBOutlet weak var inputViewBottomMargin: NSLayoutConstraint!
+    @IBOutlet weak var inputTextViewHeight: NSLayoutConstraint!
     
     var chatDatas = [String]()
     
@@ -28,6 +29,7 @@ class ViewController: UIViewController {
         chatTableView.delegate = self
         chatTableView.dataSource = self
         chatTableView.separatorStyle = .none
+        inputTextView.delegate = self
     }
 
     @objc func keyboardWillShow(noti: Notification) {
@@ -58,6 +60,7 @@ class ViewController: UIViewController {
     @IBAction func sendString(_ sender: Any) {
         chatDatas.append(inputTextView.text!)
         inputTextView.text = ""
+        inputTextViewHeight.constant = 40
         let lastIndexPath = IndexPath(row: chatDatas.count-1, section: 0)
         chatTableView.insertRows(at: [lastIndexPath], with: .automatic)
         chatTableView.scrollToRow(at: lastIndexPath, at: .bottom, animated: true)
@@ -74,11 +77,29 @@ extension ViewController: UITableViewDelegate, UITableViewDataSource {
         if indexPath.row % 2 == 0 {
             let myCell = tableView.dequeueReusableCell(withIdentifier: "myCell", for: indexPath) as! MyCell
             myCell.myTextView.text = chatDatas[indexPath.row]
+            myCell.selectionStyle = .none
             return myCell
         }
         
         let yourCell = tableView.dequeueReusableCell(withIdentifier: "yourCell", for: indexPath) as! YourCell
         yourCell.yourTextView.text = chatDatas[indexPath.row]
+        yourCell.selectionStyle = .none
         return yourCell
+    }
+}
+
+extension ViewController: UITextViewDelegate {
+    func textViewDidChange(_ textView: UITextView) {
+        if textView.contentSize.height <= 40 {
+            textView.contentSize.height = 40
+            return
+        }
+        
+        if textView.contentSize.height >= 100 {
+            inputTextViewHeight.constant = 100
+            return
+        }
+        
+        inputTextViewHeight.constant = textView.contentSize.height
     }
 }
