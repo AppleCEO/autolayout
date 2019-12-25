@@ -19,7 +19,10 @@ class PopupViewController: UIViewController {
         // Do any additional setup after loading the view.
     }
     
-
+    @IBAction func doneAction(_ sender: Any) {
+        print("press done action")
+    }
+    
     /*
     // MARK: - Navigation
 

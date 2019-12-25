@@ -54,23 +54,14 @@
                                             <constraint firstAttribute="height" constant="100" id="mLv-iT-zIX"/>
                                         </constraints>
                                     </imageView>
-                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="done_check_icon.png" translatesAutoresizingMaskIntoConstraints="NO" id="F3U-Ga-pxn">
-                                        <rect key="frame" x="215" y="-25" width="50" height="50"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="ISr-fJ-NOJ"/>
-                                            <constraint firstAttribute="width" constant="50" id="MLE-qB-N0a"/>
-                                        </constraints>
-                                    </imageView>
                                 </subviews>
                                 <color key="backgroundColor" systemColor="systemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
                                     <constraint firstItem="d0p-kq-dS6" firstAttribute="top" secondItem="fbD-Yd-edw" secondAttribute="bottom" constant="20" id="0Ku-26-Mfk"/>
                                     <constraint firstAttribute="trailing" secondItem="fbD-Yd-edw" secondAttribute="trailing" constant="20" id="2po-Fh-7Cm"/>
                                     <constraint firstItem="ZzK-gd-hJU" firstAttribute="leading" secondItem="hYP-kC-O41" secondAttribute="leading" constant="20" id="AtL-ba-c0Z"/>
-                                    <constraint firstItem="F3U-Ga-pxn" firstAttribute="centerX" secondItem="hYP-kC-O41" secondAttribute="trailing" id="Dav-Dy-bju"/>
                                     <constraint firstAttribute="bottom" secondItem="eHU-eV-dYg" secondAttribute="bottom" constant="20" id="Eep-Ad-IM6"/>
                                     <constraint firstAttribute="bottom" secondItem="d0p-kq-dS6" secondAttribute="bottom" constant="20" id="ItX-gx-IqF"/>
-                                    <constraint firstItem="F3U-Ga-pxn" firstAttribute="centerY" secondItem="hYP-kC-O41" secondAttribute="top" id="LSv-CE-3uj"/>
                                     <constraint firstItem="KM8-zB-e2e" firstAttribute="centerX" secondItem="hYP-kC-O41" secondAttribute="centerX" id="LVs-pd-Z0v"/>
                                     <constraint firstAttribute="trailing" secondItem="ZzK-gd-hJU" secondAttribute="trailing" constant="20" id="PQU-F7-kPA"/>
                                     <constraint firstItem="eHU-eV-dYg" firstAttribute="leading" secondItem="d0p-kq-dS6" secondAttribute="trailing" constant="3" id="SOw-Dp-3Iu"/>
@@ -89,11 +80,24 @@
                                     <constraint firstItem="HDl-NW-GAU" firstAttribute="leading" secondItem="hYP-kC-O41" secondAttribute="leading" id="wNo-bp-XrM"/>
                                 </constraints>
                             </view>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dER-P6-M5A">
+                                <rect key="frame" x="302" y="200.5" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="68b-Ji-6ET"/>
+                                    <constraint firstAttribute="height" constant="50" id="uAV-1W-T3o"/>
+                                </constraints>
+                                <state key="normal" title="Button" image="done_check_icon.png"/>
+                                <connections>
+                                    <action selector="doneAction:" destination="QsF-L2-0bu" eventType="touchUpInside" id="Nem-dF-I48"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.5" colorSpace="custom" customColorSpace="displayP3"/>
                         <constraints>
+                            <constraint firstItem="dER-P6-M5A" firstAttribute="centerX" secondItem="hYP-kC-O41" secondAttribute="trailing" id="9Mx-W3-LDB"/>
                             <constraint firstItem="hYP-kC-O41" firstAttribute="centerX" secondItem="8qR-OA-lLH" secondAttribute="centerX" id="LcX-g0-r4J"/>
                             <constraint firstItem="hYP-kC-O41" firstAttribute="centerY" secondItem="8qR-OA-lLH" secondAttribute="centerY" multiplier="0.9" id="t8o-6w-iCF"/>
+                            <constraint firstItem="dER-P6-M5A" firstAttribute="centerY" secondItem="hYP-kC-O41" secondAttribute="top" id="tbW-5P-Ut3"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Ctk-8k-RjM"/>
                     </view>
