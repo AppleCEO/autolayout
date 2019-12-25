@@ -29,11 +29,26 @@ class ViewController: UIViewController {
         let keyboardFrame = notiInfo[UIResponder.keyboardFrameEndUserInfoKey] as! CGRect
         let height = keyboardFrame.size.height
         
-        inputViewBottomMargin.constant = height
+        inputViewBottomMargin.constant = height - self.view.safeAreaInsets.bottom
+        
+        let animationDuration = notiInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! TimeInterval
+        
+        UIView.animate(withDuration: animationDuration) {
+            self.view.layoutIfNeeded()
+        }
     }
     
     @objc func keyboardWillHide(noti: Notification) {
+        let notiInfo = noti.userInfo!
+        
+        let animationDuration = notiInfo[UIResponder.keyboardAnimationDurationUserInfoKey] as! TimeInterval
+        
         inputViewBottomMargin.constant = 0
+        UIView.animate(withDuration: animationDuration) {
+            self.view.layoutIfNeeded()
+        }
+        
+        
     }
     
     @IBAction func sendString(_ sender: Any) {
